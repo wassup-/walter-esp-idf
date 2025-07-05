@@ -1,5 +1,5 @@
 /**
- * @file WalterModem.h
+ * @file WalterModem.hpp
  * @author Daan Pape <daan@dptechnics.com>
  * @date 9 Jan 2023
  * @copyright DPTechnics bv
@@ -4904,7 +4904,7 @@ public:
      * @param rsp Optional modem response structure to save the result in.
      *
      * @return True on success, false otherwise.
-     * 
+     *
      * @warning the receiveCount cannot be larger then the amount of bytes left to receive (use event handler to keep track of the available bytes)
      */
     static bool socketReceive(
@@ -5019,11 +5019,11 @@ public:
      * @param args Optional argument to pass to the callback.
      *
      * @return True on success, false on error.
-     * 
+     *
      * @warning
      * the utc time can be found in the clock portion of the rspData.
      */
-    static bool gnssGetUTCTime(WalterModemRsp *rsp = NULL, walterModemCb cb = NULL, void *args = NULL); 
+    static bool gnssGetUTCTime(WalterModemRsp *rsp = NULL, walterModemCb cb = NULL, void *args = NULL);
 #endif
 #pragma endregion
 #pragma endregion

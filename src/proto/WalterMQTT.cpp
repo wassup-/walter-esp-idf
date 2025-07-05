@@ -43,7 +43,7 @@
  * This file contains the headers of Walter's modem library.
  */
 
-#include <WalterDefines.h>
+#include <WalterDefines.hpp>
 
 #if CONFIG_WALTER_MODEM_ENABLE_MQTT
     #pragma region PRIVATE_METHODS
@@ -104,7 +104,7 @@ bool WalterModem::mqttConfig(
 
         buf->size += sprintf((char*) buf->data + buf->size, ",%u", tlsProfileId);
     }
-    
+
     _runCmd(arr((const char*) buf->data), "OK", rsp, cb, args);
     _returnAfterReply();
 }

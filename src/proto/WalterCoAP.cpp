@@ -43,7 +43,7 @@
  * This file contains the headers of Walter's modem library.
  */
 
-#include <WalterDefines.h>
+#include <WalterDefines.hpp>
 
 #if CONFIG_WALTER_MODEM_ENABLE_COAP
     #pragma region PRIVATE_METHODS
@@ -100,7 +100,7 @@ bool WalterModem::coapDidRing(
         profileId,
         _coapContextSet[profileId].rings[ringIdx].messageId,
         _coapContextSet[profileId].rings[ringIdx].length);
-        
+
     _receiving = true;
     _receiveExpected = _coapContextSet[profileId].rings[ringIdx].length;
     _runCmd(

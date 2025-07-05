@@ -43,8 +43,8 @@
  * This file contains the Socket implementation of the Walter Modem library.
  */
 
-#include <WalterDefines.h>
-#include <WalterModem.h>
+#include <WalterDefines.hpp>
+#include <WalterModem.hpp>
 
 #if CONFIG_WALTER_MODEM_ENABLE_SOCKETS
     #pragma region PRIVATE_METHODS

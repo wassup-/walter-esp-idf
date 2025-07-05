@@ -47,7 +47,7 @@
  * data, gets a GNSS fix and uploads the position to the Walter demo server.
  */
 
-#include "WalterModem.h"
+#include "WalterModem.hpp"
 
 #include <cstring>
 #include <driver/temp_sensor.h>
@@ -134,7 +134,7 @@ bool lteInit(const char *apn)
         return false;
     }
 
-   
+
     return true;
 }
 

@@ -47,7 +47,7 @@
  * and querry the example page.
  */
 
-#include "WalterModem.h"
+#include "WalterModem.hpp"
 
 #include <cstring>
 #include <driver/uart.h>

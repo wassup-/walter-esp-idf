@@ -61,7 +61,7 @@
 
 #include "BlueCherryZTP.h"
 #include "BlueCherryZTP_CBOR.h"
-#include "WalterModem.h"
+#include "WalterModem.hpp"
 
 #ifdef ARDUINO
 #define DELAY(delayMs) delay(delayMs)

@@ -47,7 +47,7 @@
  * data to the Walter Demo server on walterdemo.quickspot.io.
  */
 
-#include "WalterModem.h"
+#include "WalterModem.hpp"
 
 #include <driver/uart.h>
 #include <esp_log.h>

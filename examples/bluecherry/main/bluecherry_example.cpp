@@ -47,7 +47,7 @@
  * It also supports OTA updates which are scheduled through the BlueCherry web interface.
  */
 
-#include <WalterModem.h>
+#include <WalterModem.hpp>
 #include <BlueCherryZTP.h>
 #include <BlueCherryZTP_CBOR.h>
 #include <driver/uart.h>
@@ -342,7 +342,7 @@ extern "C" void app_main(void)
         ESP_LOGE(TAG, "Could Not Connect to LTE");
         return;
     }
-    
+
     configureBluecherry();
 
     for (;;) {

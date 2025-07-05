@@ -47,7 +47,7 @@
  * COAP test server.
  */
 
-#include <WalterModem.h>
+#include <WalterModem.hpp>
 #include <esp_log.h>
 #include <esp_mac.h>
 
@@ -257,7 +257,7 @@ extern "C" void app_main(void)
 
                 incomingBuf[rsp.data.coapResponse.length] = '\0'; // Null-terminate the buffer
                 ESP_LOGI(TAG, "Response: '%s'", incomingBuf);
-                
+
                 ESP_LOGI(TAG, "\r\n");
             }
         }

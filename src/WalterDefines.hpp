@@ -1,5 +1,5 @@
 /**
- * @file WalterDefines.h
+ * @file WalterDefines.hpp
  * @author Daan Pape <daan@dptechnics.com>
  * @date 28 Mar 2025
  * @copyright DPTechnics bv
@@ -45,7 +45,7 @@
 
 #ifndef WALTER_DEFINES_H
 #define WALTER_DEFINES_H
-#include <WalterModem.h>
+#include <WalterModem.hpp>
 #include <stdbool.h>
 #include <stdint.h>
 #include <time.h>

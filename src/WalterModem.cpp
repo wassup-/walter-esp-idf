@@ -43,7 +43,7 @@
  * This file contains Walter's modem library implementation.
  */
 
-#include <WalterDefines.h>
+#include <WalterDefines.hpp>
 
 #ifdef ARDUINO
     #include <Arduino.h>
@@ -1090,7 +1090,7 @@ bool WalterModem::_checkPayloadComplete()
         _parseRxData(resultPos, size);
         return true;
     }
-    
+
     resultPos = (char *)memmem(
         &_parserData.buf->data[_receiveExpected], _parserData.buf->size, "+CME ERROR:", 11);
 
@@ -3523,7 +3523,7 @@ bool WalterModem::begin(uart_port_t uartNo, uint8_t watchdogTimeout)
         sizeof(WalterModemTaskQueueItem),
         _taskQueue.mem,
         &(_taskQueue.memHandle));
-    
+
     _ringQueue.handle = xQueueCreateStatic(
         WALTER_MODEM_MAX_SOCKET_RINGS,
         sizeof(WalterModemSocketRing),
@@ -3576,7 +3576,7 @@ bool WalterModem::begin(uart_port_t uartNo, uint8_t watchdogTimeout)
         &_rxTaskBuf,
         0);
 
-    
+
 #endif
 /* the queueProcessingTask cannot be on the same level as the UART task otherwise a modem freeze can
  * occur */

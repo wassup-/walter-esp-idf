@@ -43,7 +43,7 @@
  * This file contains the headers of Walter's modem library.
  */
 
-#include <WalterDefines.h>
+#include <WalterDefines.hpp>
 
 #if CONFIG_WALTER_MODEM_ENABLE_GNSS
     #pragma region PRIVATE_METHODS
