@@ -46,10 +46,8 @@
 #ifndef WALTER_MODEM_H
 #define WALTER_MODEM_H
 
-#include <bitset>
-#include <cstdint>
-#include <cstring>
-#include <mutex>
+#include <stdint.h>
+// #include <mutex>
 
 #ifdef ARDUINO
     #undef ARDUINO_SERIAL_EVENT_TASK_STACK_SIZE
