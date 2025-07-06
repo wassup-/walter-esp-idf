@@ -43,8 +43,8 @@
  * This file contains the Socket implementation of the Walter Modem library.
  */
 
-#include <WalterDefines.hpp>
-#include <WalterModem.hpp>
+#include <WalterDefines.h>
+#include <WalterModem.h>
 
 #if CONFIG_WALTER_MODEM_ENABLE_SOCKETS
     #pragma region PRIVATE_METHODS
@@ -97,7 +97,7 @@ void WalterModem::_ringQueueProcessingTask(void *args)
     WalterModemSocketRing ring{};
     TickType_t blockTime = pdMS_TO_TICKS(1000);
     uint8_t data[1500];
-    while(true) 
+    while(true)
     {
         if (xQueueReceive(_ringQueue.handle, &ring, blockTime) == pdTRUE) {
             socketReceive(ring.ringSize, sizeof(data), data, ring.profileId);

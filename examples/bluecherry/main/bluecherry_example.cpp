@@ -47,7 +47,7 @@
  * It also supports OTA updates which are scheduled through the BlueCherry web interface.
  */
 
-#include <WalterModem.hpp>
+#include <WalterModem.h>
 #include <BlueCherryZTP.h>
 #include <BlueCherryZTP_CBOR.h>
 #include <driver/uart.h>

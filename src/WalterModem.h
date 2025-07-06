@@ -1,5 +1,5 @@
 /**
- * @file WalterModem.hpp
+ * @file WalterModem.h
  * @author Daan Pape <daan@dptechnics.com>
  * @date 9 Jan 2023
  * @copyright DPTechnics bv

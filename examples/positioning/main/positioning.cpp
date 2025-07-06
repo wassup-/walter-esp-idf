@@ -47,7 +47,7 @@
  * data, gets a GNSS fix and uploads the position to the Walter demo server.
  */
 
-#include "WalterModem.hpp"
+#include "WalterModem.h"
 
 #include <cstring>
 #include <driver/temp_sensor.h>

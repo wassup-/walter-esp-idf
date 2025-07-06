@@ -43,7 +43,7 @@
  * This file contains Walter's modem library implementation.
  */
 
-#include <WalterDefines.hpp>
+#include <WalterDefines.h>
 
 #ifdef ARDUINO
     #include <Arduino.h>

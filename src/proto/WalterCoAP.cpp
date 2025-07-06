@@ -43,7 +43,7 @@
  * This file contains the headers of Walter's modem library.
  */
 
-#include <WalterDefines.hpp>
+#include <WalterDefines.h>
 
 #if CONFIG_WALTER_MODEM_ENABLE_COAP
     #pragma region PRIVATE_METHODS

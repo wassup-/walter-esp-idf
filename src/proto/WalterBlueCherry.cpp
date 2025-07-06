@@ -1,5 +1,5 @@
 /**
- * @file WalterModem.hpp
+ * @file WalterModem.h
  * @author Daan Pape <daan@dptechnics.com>
  * @date 28 Mar 2025
  * @copyright DPTechnics bv
@@ -43,7 +43,7 @@
  * This file contains the headers of Walter's modem library.
  */
 
-#include <WalterDefines.hpp>
+#include <WalterDefines.h>
 #if CONFIG_WALTER_MODEM_ENABLE_BLUE_CHERRY
     #if !CONFIG_WALTER_MODEM_ENABLE_BLUE_CHERRY || !CONFIG_WALTER_MODEM_ENABLE_MOTA
         #error Bluecherry cannot be enabled with OTA or MOTA disabled.
@@ -329,7 +329,7 @@ size_t WalterModem::blueCherryGetOtaProgressPercentage()
 }
 
 
-size_t WalterModem::blueCherryGetOtaProgressBytes() 
+size_t WalterModem::blueCherryGetOtaProgressBytes()
 {
     return blueCherry.otaProgress;
 }

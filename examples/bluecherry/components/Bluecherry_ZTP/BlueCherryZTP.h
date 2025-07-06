@@ -57,7 +57,7 @@
 #include <mbedtls/x509_crt.h>
 #include <mbedtls/x509_csr.h>
 
-#include <WalterModem.hpp>
+#include <WalterModem.h>
 
 /**
  * @brief The number of characters in a BlueCherry Type ID or Device ID.
